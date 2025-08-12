@@ -1,6 +1,21 @@
 
+interface Person {
+    firstName: string;
+    lastName: string;
+    age: number;
+    address: Address
+    // address: {
+    //     postalCode: string;
+    //     city: string
+    // }
+}
 
-const ironman = {
+interface Address {
+    postalCode: string;
+    city: string
+}
+
+const ironman: Person = {
     firstName: 'Tony',
     lastName: 'Stark',
     age: 45,
@@ -10,13 +25,15 @@ const ironman = {
     }
 };
 
+console.log(ironman)
+
 // const spiderman = {...ironman}
-const spiderman = structuredClone(ironman)
+// const spiderman = structuredClone(ironman)
 
-spiderman.firstName = 'Peter';
-spiderman.lastName = 'Parker';
-spiderman.age = 22;
+// spiderman.firstName = 'Peter';
+// spiderman.lastName = 'Parker';
+// spiderman.age = 22;
 
-spiderman.address.city = 'Chinandega';
+// spiderman.address.city = 'Chinandega';
 
-console.log(ironman, spiderman)
+// console.log(ironman, spiderman)
