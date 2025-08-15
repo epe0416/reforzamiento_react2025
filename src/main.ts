@@ -1,5 +1,5 @@
 import './style.css'
-import './bases/09-promises'
+import './bases/10-fetch-api'
 import { getHeroesByOwner } from './bases/08-imp-exp'
 import { Owner } from './data/heroes.data'
 
@@ -8,4 +8,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <h1>Hola Mundo</h1>
   </div>
 `
-console.log(getHeroesByOwner(Owner.DC))
+// console.log(getHeroesByOwner(Owner.DC))
